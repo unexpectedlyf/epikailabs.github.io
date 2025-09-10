@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epikai Labs | No-BS App Studio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Epikai Labs - A no-BS app studio in Cape Town, South Africa, turning bold ideas into killer mobile and web apps.">
+    <meta name="keywords" content="Epikai Labs, app development, mobile apps, web apps, Revvly, FastAPI, FlutterFlow, Python, studio, Cape Town, South Africa">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Epikai Labs | No-BS App Studio">
+    <meta property="og:description" content="We’re a Cape Town-based app studio that cuts through the noise to build bold, living apps. Got an idea? Let’s talk.">
+    <meta property="og:url" content="https://epikailabs.github.io">
+    <meta property="og:site_name" content="Epikai Labs">
+    <meta property="og:image" content="https://placehold.co/1200x630/000000/FFFFFF?text=Epikai+Labs+OG+Image">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Epikai Labs | No-BS App Studio">
+    <meta name="twitter:description" content="We’re a Cape Town-based app studio that cuts through the noise to build bold, living apps. Got an idea? Let’s talk.">
+    <meta name="twitter:image" content="https://placehold.co/1200x675/000000/FFFFFF?text=Epikai+Labs+Twitter+Image">
+</head>
+<body class="bg-gray-900 text-white tracking-tight">
+
+    <main class="min-h-screen flex flex-col">
+
+        <!-- Header Section -->
+        <header class="w-full py-4 px-4 sm:px-8 md:px-12 grid grid-cols-2 sm:grid-cols-3 items-center">
+            <!-- Left: CTA -->
+            <a href="#contact" class="text-sm font-light text-gray-400 hover:text-white transition-colors">
+                Got an Idea? Talk to Us
+            </a>
+            <!-- Center: Studio Name -->
+            <a class="text-xl sm:text-2xl font-bold text-center tracking-tighter col-span-1 sm:col-span-1" href="#">
+                Epikai Labs
+            </a>
+            <!-- Right: Navigation -->
+            <div class="hidden sm:flex ml-auto space-x-4">
+                <a href="#products" class="text-sm font-medium hover:text-blue-400 transition-colors">Products</a>
+                <a href="#team" class="text-sm font-medium hover:text-blue-400 transition-colors">Team</a>
+                <a href="#contact" class="text-sm font-medium hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <div class="sm:hidden ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="flex-1 flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 sm:pt-32 md:pt-40">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-tight max-w-4xl">
+                We’re a No-BS App Studio.<br>
+                We Turn <span class="italic text-blue-400">Ideas</span> into Killer Apps.
+            </h1>
+            <p class="text-base sm:text-lg font-light mt-6 mb-8 text-gray-400 max-w-2xl">
+                Based in Cape Town, Epikai Labs builds bold mobile and web apps that hit hard and solve real problems. We don’t mess around—just pure, clean code and daring vision.
+            </p>
+            <a href="#contact" class="inline-block bg-blue-400 hover:bg-blue-500 text-gray-900 px-8 py-3.5 rounded-full transition-colors text-base font-semibold shadow-lg">
+                Let’s Build Something Epic
+            </a>
+            <div class="mt-auto mb-8 pt-16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 animate-bounce text-gray-400">
+                    <path d="M12 5v14"></path>
+                    <path d="m19 12-7 7-7-7"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Products Showcase Section -->
+        <section id="products" class="px-4 sm:px-8 md:px-12 py-16 bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex justify-between items-center mb-10">
+                    <h2 class="text-3xl font-bold tracking-tighter">Our Creations</h2>
+                    <p class="text-sm font-light text-gray-400">Apps Built with Grit</p>
+                </div>
+
+                <!-- Mobile Scrollable Products -->
+                <div class="block sm:hidden mb-12">
+                    <div class="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
+                        <div class="flex gap-4">
+                            <!-- Product Card: Revvly -->
+                            <div class="min-w-[80%]">
+                                <div class="relative aspect-square overflow-hidden rounded-xl bg-gray-700 group cursor-pointer shadow-md">
+                                    <img src="https://placehold.co/400x400/CCCCCC/000000?text=Revvly" alt="Revvly App" class="object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl w-full h-full">
+                                    <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-4 rounded-xl">
+                                        <h3 class="text-white text-lg font-semibold tracking-tighter">Revvly</h3>
+                                        <p class="text-gray-300 text-xs mt-1">The ultimate app for SA car enthusiasts—events, groups, and a marketplace that revs up your passion.</p>
+                                        <a href="https://revvly.app" target="_blank" rel="noopener noreferrer" class="text-gray-300 text-sm mt-3 inline-block border-b border-gray-300 hover:border-white transition-colors">Check It Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Grid Products -->
+                <div class="hidden sm:grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <!-- Product Card: Revvly -->
+                    <div class="relative aspect-square overflow-hidden rounded-xl bg-gray-700 group cursor-pointer shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/400x400/CCCCCC/000000?text=Revvly" alt="Revvly App" class="object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl w-full h-full">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 rounded-xl flex flex-col justify-end p-6">
+                            <h3 class="text-white text-xl font-semibold tracking-tighter">Revvly</h3>
+                            <p class="text-gray-300 text-sm mt-1">The ultimate app for SA car enthusiasts—events, groups, and a marketplace that revs up your passion.</p>
+                            <a href="https://revvly.app" target="_blank" rel="noopener noreferrer" class="text-gray-300 text-sm mt-3 inline-block border-b border-gray-300 hover:border-white transition-colors">Check It Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="px-4 sm:px-8 md:px-12 py-16 bg-gray-900">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-10 tracking-tighter">The Brains Behind the Code</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Team Member: You -->
+                    <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/150x150/d1e7dd/000000?text=You" alt="Your Name" class="rounded-full w-32 h-32 object-cover border-4 border-blue-400 shadow-lg mb-4">
+                        <h3 class="text-xl font-semibold tracking-tighter">Kgutlane Ralijeje</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">Lead Developer & Visionary</p>
+                        <p class="text-gray-400 text-sm leading-relaxed max-w-md">
+                            I’m the code-slinger at Epikai Labs, turning bold ideas into apps that pack a punch. Python, FastAPI, and FlutterFlow are my tools; clean, scalable solutions are my game.
+                        </p>
+                    </div>
+                       <!-- Team Member: Kayle -->
+                    <div class="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-md">
+                        <img src="https://placehold.co/150x150/d1e7dd/000000?text=You" alt="Your Name" class="rounded-full w-32 h-32 object-cover border-4 border-blue-400 shadow-lg mb-4">
+                        <h3 class="text-xl font-semibold tracking-tighter">Kayle Winaar</h3>
+                        <p class="text-blue-400 text-sm font-medium mb-3">Marketeer & Strategist</p>
+                        <p class="text-gray-400 text-sm leading-relaxed max-w-md">
+                            I’m the marketing wizard at Epikai Labs, crafting campaigns that ignite engagement and drive results. Social media, SEO, and data-driven insights are my tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="px-4 sm:px-8 md:px-12 py-16 bg-blue-400 text-gray-900">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="flex justify-center mb-6">
+                    <div class="bg-gray-900 p-3 rounded-full shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-white">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tighter">
+                    Got a <span class="italic">Big Idea?</span> Let’s Make It Real.
+                </h2>
+                <p class="text-base sm:text-lg text-gray-800 max-w-2xl mx-auto mb-8">
+                    We don’t do cookie-cutter services, but we’re always down to hear your vision. Drop us a line, and let’s build something that shakes things up.
+                </p>
+                <form action="https://formspree.io/f/xwpnyadj" method="POST" class="max-w-md mx-auto">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg" required>
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg" required>
+                    <input type="number" name="phone" placeholder="Your Phone Number" class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg" required>
+                    <textarea name="message" placeholder="Your Idea" class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg" rows="4" required></textarea>
+                    <button type="submit" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-semibold">Send</button>
+                </form>
+                <a href="mailto:epikailabs@gmail.com" class="inline-block mt-4 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full transition-colors text-base font-semibold shadow-lg">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="px-4 sm:px-8 md:px-12 py-12 border-t border-gray-700 bg-gray-900">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    <!-- Studio Info -->
+                    <div>
+                        <a class="text-2xl font-bold mb-3 block tracking-tighter" href="#">Epikai Labs</a>
+                        <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+                            A Cape Town app studio crafting bold mobile and web apps that don’t mess around.
+                        </p>
+                        <a href="mailto:epikailabs@gmail.com" class="inline-block bg-blue-400 hover:bg-blue-500 text-gray-900 px-6 py-2.5 rounded-full transition-colors text-sm font-medium">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3 tracking-tighter">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Home</a></li>
+                            <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#products">Products</a></li>
+                            <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#team">Team</a></li>
+                            <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Connect -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3 tracking-tighter">Connect</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a class="flex items-center text-gray-400 hover:text-white transition-colors text-sm" href="https://linkedin.com/company/epikailabs" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center text-gray-400 hover:text-white transition-colors text-sm" href="https://x.com/epikailabs" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                    X
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Location -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3 tracking-tighter">Location</h3>
+                        <p class="text-sm text-gray-400">Cape Town, Western Cape, 7780</p>
+                        <p class="text-sm text-gray-400 mt-1">South Africa</p>
+                        <p class="text-sm text-gray-400 mt-2">(083) 793-5476</p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center text-xs text-gray-500">
+                    &copy; 2025 Epikai Labs. Built with guts. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
