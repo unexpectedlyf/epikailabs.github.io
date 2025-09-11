@@ -57,8 +57,8 @@
 
         <!-- Header Section -->
         <header x-data="{ open: false }" class="w-full py-4 px-4 sm:px-8 md:px-12 flex items-center justify-between relative">
-            <!-- Left: Logo (centered on mobile, left on desktop) -->
-            <a class="text-xl sm:text-2xl font-bold tracking-tighter flex-1 text-center sm:text-left" href="#">
+            <!-- Left: Logo (always far left) -->
+            <a class="text-xl sm:text-2xl font-bold tracking-tighter text-left" href="#">
                 Epikai Labs
             </a>
             <!-- Center: CTA (hidden on mobile, visible on desktop) -->
@@ -71,8 +71,8 @@
                 <a href="#team" class="text-sm font-medium hover:text-blue-400 transition-colors">Team</a>
                 <a href="#contact" class="text-sm font-medium hover:text-blue-400 transition-colors">Contact</a>
             </div>
-            <!-- Mobile Menu Icon (right, more natural position) -->
-            <div class="sm:hidden flex-1 flex justify-end">
+            <!-- Mobile Menu Icon (far right) -->
+            <div class="sm:hidden flex items-center">
                 <button @click="open = !open" aria-label="Open Menu" class="p-2 rounded-md hover:bg-gray-800 transition">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7">
                         <line x1="4" y1="6" x2="20" y2="6"></line>
